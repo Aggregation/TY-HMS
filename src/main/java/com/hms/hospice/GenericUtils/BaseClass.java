@@ -36,9 +36,41 @@ public class BaseClass {
 	}
 	
 	
-	@Parameters("BROWSER")
+	
+	
+	//@Parameters("BROWSER")
 	@BeforeClass(alwaysRun = true)
-public void congig_BC(String BROWSER) throws Throwable
+	
+	public void config_BC() throws Throwable
+	{
+		String BROWSER = System.getProperty("browser");
+		String URL=System.getProperty("url");
+		
+		System.out.println(BROWSER);
+		System.out.println(URL);
+		
+		if(BROWSER.equalsIgnoreCase("chrome"))
+		{
+			driver=new ChromeDriver();
+		}
+		else if(BROWSER.equalsIgnoreCase("edge"))
+		{
+			driver=new EdgeDriver();
+		}
+		else
+		{
+			System.out.println("Invalid browser");
+		}
+		
+		Thread.sleep(10000);
+		sdriver=driver;
+		wu.maximizeWindow(driver);
+		
+		
+		System.out.println("--Lanunch Browser--");
+	}
+	
+ /*   public void congig_BC(String BROWSER) throws Throwable
 	//public void congig_BC() throws Throwable
 	{
 		//String BROWSER = fu.readDataFromPropertyFile("browser");
@@ -62,6 +94,7 @@ public void congig_BC(String BROWSER) throws Throwable
 		
 		System.out.println("--Lanunch Browser--");
 	}
+	*/
 	
 	@BeforeMethod(alwaysRun = true)
 	public void config_BM() throws Throwable
