@@ -36,12 +36,12 @@ public class BaseClass {
 	}
 	
 	
-	//@Parameters("BROWSER")
+	@Parameters("BROWSER")
 	@BeforeClass(alwaysRun = true)
-//	public void congig_BC(String BROWSER) throws Throwable
-	public void congig_BC() throws Throwable
+public void congig_BC(String BROWSER) throws Throwable
+	//public void congig_BC() throws Throwable
 	{
-		String BROWSER = fu.readDataFromPropertyFile("browser");
+		//String BROWSER = fu.readDataFromPropertyFile("browser");
 		if(BROWSER.equalsIgnoreCase("chrome"))
 		{
 			 driver=new ChromeDriver();
