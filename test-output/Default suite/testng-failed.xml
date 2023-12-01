@@ -3,17 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.hms.hospice.sprint1.AdminChangePasswordTest">
+      <class name="com.hms.hospice.sprint1.PatientBookAppointmentTest">
         <methods>
-          <include name="test1"/>
-          <include name="congig_BC"/>
-          <include name="config_AC"/>
-          <include name="config_AS"/>
-          <include name="config_BS"/>
-          <include name="config_AM"/>
-          <include name="config_BM"/>
+          <include name="BookAppointment"/>
         </methods>
-      </class> <!-- com.hms.hospice.sprint1.AdminChangePasswordTest -->
+      </class> <!-- com.hms.hospice.sprint1.PatientBookAppointmentTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -105,16 +105,22 @@ public class PatientBookAppointmentTest {
 		PatientBookAppointmentPage patBook=new PatientBookAppointmentPage(driver);
 //		patBook.getDate_Field().click();
 		
-		driver.findElement(By.name("appdate")).click();
-		driver.findElement(By.xpath("//td[text()=\"26\"]")).click();
-		driver.findElement(By.name("apptime")).click();
-		for(int i=0;i<=5;i++)
-		{
-			
-			driver.findElement(By.xpath("//a[@data-action=\"decrementHour\"]")).click();
-			driver.findElement(By.xpath("//a[@data-action=\"decrementMinute\"]")).click();
-			driver.findElement(By.xpath("//a[@data-action=\"toggleMeridian\"]")).click();
-		}
+//		patBook.getDateTf().click();
+//		patBook.getDate_Field().click();
+//		//driver.findElement(By.name("appdate")).click();
+//		driver.findElement(By.xpath("//tbody/descendant::td[@class=\"day\" and text()=\"25\"]")).click();
+		//driver.findElement(By.xpath("//td[text()=\"2\"]")).click();
+		patBook.selectDate();
+		
+		patBook.selectTime();
+//		driver.findElement(By.name("apptime")).click();
+//		for(int i=0;i<=5;i++)
+//		{
+//			
+//			driver.findElement(By.xpath("//a[@data-action=\"decrementHour\"]")).click();
+//			driver.findElement(By.xpath("//a[@data-action=\"decrementMinute\"]")).click();
+//			driver.findElement(By.xpath("//a[@data-action=\"toggleMeridian\"]")).click();
+//		}
 		
 		patBook.getSubmitBtn().click();
 		//driver.findElement(By.xpath("//button[@class=\"btn btn-o btn-primary\"]")).click();
