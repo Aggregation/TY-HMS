@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Suite">
+  <test thread-count="1" parallel="tests" name="Test1">
+    <classes>
+      <class name="com.hms.hospice.sprint1.DoctorAddMedicalHistoryTest"/>
+      <class name="com.hms.hospice.sprint1.PatientBookAppointmentTest"/>
+      <class name="com.hms.hospice.sprint1.PatientUpdateProfileTest"/>
+      <class name="com.hms.hospice.sprint1.AdminEditDoctorDetailsTest"/>
+      <class name="com.hms.hospice.sprint1.AdminAddNewDoctorTest"/>
+    </classes>
+  </test>
+    <test thread-count="1" parallel="tests" name="Test2">
+    <classes>
+      <class name="com.hms.hospice.sprint1.DoctorAddMedicalHistoryTest"/>
+      <class name="com.hms.hospice.sprint1.PatientBookAppointmentTest"/>
+      <class name="com.hms.hospice.sprint1.PatientUpdateProfileTest"/>
+      <class name="com.hms.hospice.sprint1.AdminEditDoctorDetailsTest"/>
+      <class name="com.hms.hospice.sprint1.AdminAddNewDoctorTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

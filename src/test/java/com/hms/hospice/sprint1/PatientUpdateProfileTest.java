@@ -13,6 +13,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
 import com.hms.hospice.GenericUtils.BaseClass;
 import com.hms.hospice.GenericUtils.DatabaseUtils;
@@ -27,7 +28,11 @@ import com.objectRepository.PatientEditProfilePage;
 import com.objectRepository.PatientLoginPage;
 
 public class PatientUpdateProfileTest {
-	public static void main(String[] args) throws Throwable {
+	
+	@Test
+	public void PatUpdateProfile() throws Throwable
+	{
+	//public static void main(String[] args) throws Throwable {
 		
 
 		WebdriverUtils wu=new WebdriverUtils();

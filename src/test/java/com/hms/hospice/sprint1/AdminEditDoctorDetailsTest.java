@@ -19,6 +19,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.Assert;
 import org.testng.IRetryAnalyzer;
+import org.testng.annotations.Test;
 
 import com.hms.hospice.GenericUtils.BaseClass;
 import com.hms.hospice.GenericUtils.DatabaseUtils;
@@ -35,7 +36,12 @@ import com.objectRepository.Admin_ManageDoctorPage;
 import com.objectRepository.HomePage;
 
 public class AdminEditDoctorDetailsTest  {
-	public static void main(String[] args) throws Throwable {
+	
+	
+	@Test
+	public void EditDoct() throws Throwable 
+	{
+	//public static void main(String[] args) throws Throwable {
 		
 		FileUtils fu=new FileUtils();
 		WebdriverUtils wu=new WebdriverUtils();

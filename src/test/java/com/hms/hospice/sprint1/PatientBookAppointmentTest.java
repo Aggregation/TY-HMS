@@ -11,6 +11,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Test;
 
 import com.hms.hospice.GenericUtils.DatabaseUtils;
 import com.hms.hospice.GenericUtils.ExcelUtils;
@@ -23,7 +24,12 @@ import com.objectRepository.PatientDashboardPage;
 import com.objectRepository.PatientLoginPage;
 
 public class PatientBookAppointmentTest {
-	public static void main(String[] args) throws Throwable {
+	
+	@Test
+	public void BookAppointment() throws Throwable 
+	{
+
+	//public static void main(String[] args) throws Throwable {
 		
 		WebdriverUtils wu=new WebdriverUtils();
 		FileUtils fu=new FileUtils();
