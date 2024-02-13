@@ -3,11 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.hms.hospice.sprint1.PatientBookAppointmentTest">
+      <class name="ParallelExecution.TestCase">
         <methods>
-          <include name="BookAppointment"/>
+          <include name="test3"/>
+          <include name="test2"/>
+          <include name="test1"/>
+          <include name="launchApplication"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.hms.hospice.sprint1.PatientBookAppointmentTest -->
+      </class> <!-- ParallelExecution.TestCase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

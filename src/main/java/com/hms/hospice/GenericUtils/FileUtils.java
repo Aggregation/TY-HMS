@@ -26,10 +26,6 @@ public class FileUtils  {
 		
 	}
 
-//	public static void copyFile(File src, File dst) {
-//		// TODO Auto-generated method stub
-//		
-//	}
 
 	
 }

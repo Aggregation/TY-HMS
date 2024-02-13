@@ -88,7 +88,9 @@ public class ExcelUtils {
 		Sheet sh = wb.getSheet(sheetName);
 		int count=sh.getLastRowNum();
 		String value="";
+		
 		HashMap<String, String> map=new HashMap<String, String>();
+		
 		for(int i=0;i<=count;i++)
 		{
 			String key=sh.getRow(i).getCell(0).getStringCellValue();

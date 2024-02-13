@@ -1,17 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-01T11:39:50 IST" name="Default suite" finished-at="2023-12-01T11:39:56 IST" duration-ms="5400">
+  <suite started-at="2024-02-12T10:48:45 IST" name="Suite" finished-at="2024-02-12T10:49:35 IST" duration-ms="50215">
     <groups>
     </groups>
-    <test started-at="2023-12-01T11:39:50 IST" name="Default test" finished-at="2023-12-01T11:39:56 IST" duration-ms="5400">
-      <class name="com.hms.hospice.sprint1.PatientBookAppointmentTest">
-        <test-method signature="BookAppointment()[pri:0, instance:com.hms.hospice.sprint1.PatientBookAppointmentTest@18078bef]" started-at="2023-12-01T11:39:51 IST" name="BookAppointment" finished-at="2023-12-01T11:39:56 IST" duration-ms="5330" status="PASS">
+    <test started-at="2024-02-12T10:48:45 IST" name="Test1" finished-at="2024-02-12T10:49:34 IST" duration-ms="49655">
+      <class name="ParallelExecution.TestCase">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ParallelExecution.TestCase@62ddbd7e]" started-at="2024-02-12T10:48:45 IST" name="launchApplication" finished-at="2024-02-12T10:49:02 IST" duration-ms="16938" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BookAppointment -->
-      </class> <!-- com.hms.hospice.sprint1.PatientBookAppointmentTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- launchApplication -->
+        <test-method signature="test1()[pri:1, instance:ParallelExecution.TestCase@62ddbd7e]" started-at="2024-02-12T10:49:02 IST" name="test1" finished-at="2024-02-12T10:49:02 IST" duration-ms="20" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ParallelExecution.TestCase@62ddbd7e]" started-at="2024-02-12T10:49:02 IST" name="tearDown" finished-at="2024-02-12T10:49:04 IST" duration-ms="2271" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ParallelExecution.TestCase@62ddbd7e]" started-at="2024-02-12T10:49:04 IST" name="launchApplication" finished-at="2024-02-12T10:49:16 IST" duration-ms="11986" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="test3()[pri:2, instance:ParallelExecution.TestCase@62ddbd7e]" started-at="2024-02-12T10:49:16 IST" name="test3" finished-at="2024-02-12T10:49:16 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ParallelExecution.TestCase@62ddbd7e]" started-at="2024-02-12T10:49:16 IST" name="tearDown" finished-at="2024-02-12T10:49:19 IST" duration-ms="3069" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ParallelExecution.TestCase@62ddbd7e]" started-at="2024-02-12T10:49:19 IST" name="launchApplication" finished-at="2024-02-12T10:49:32 IST" duration-ms="12890" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="test2()[pri:3, instance:ParallelExecution.TestCase@62ddbd7e]" started-at="2024-02-12T10:49:32 IST" name="test2" finished-at="2024-02-12T10:49:32 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ParallelExecution.TestCase@62ddbd7e]" started-at="2024-02-12T10:49:32 IST" name="tearDown" finished-at="2024-02-12T10:49:34 IST" duration-ms="2360" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ParallelExecution.TestCase -->
+    </test> <!-- Test1 -->
+    <test started-at="2024-02-12T10:48:45 IST" name="Test" finished-at="2024-02-12T10:49:35 IST" duration-ms="50215">
+      <class name="ParallelExecution.TestCase">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ParallelExecution.TestCase@4c583ecf]" started-at="2024-02-12T10:48:45 IST" name="launchApplication" finished-at="2024-02-12T10:49:02 IST" duration-ms="17074" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="test1()[pri:1, instance:ParallelExecution.TestCase@4c583ecf]" started-at="2024-02-12T10:49:02 IST" name="test1" finished-at="2024-02-12T10:49:02 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ParallelExecution.TestCase@4c583ecf]" started-at="2024-02-12T10:49:02 IST" name="tearDown" finished-at="2024-02-12T10:49:04 IST" duration-ms="2399" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ParallelExecution.TestCase@4c583ecf]" started-at="2024-02-12T10:49:04 IST" name="launchApplication" finished-at="2024-02-12T10:49:18 IST" duration-ms="14047" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="test3()[pri:2, instance:ParallelExecution.TestCase@4c583ecf]" started-at="2024-02-12T10:49:18 IST" name="test3" finished-at="2024-02-12T10:49:18 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ParallelExecution.TestCase@4c583ecf]" started-at="2024-02-12T10:49:18 IST" name="tearDown" finished-at="2024-02-12T10:49:20 IST" duration-ms="1989" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ParallelExecution.TestCase@4c583ecf]" started-at="2024-02-12T10:49:20 IST" name="launchApplication" finished-at="2024-02-12T10:49:32 IST" duration-ms="12056" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="test2()[pri:3, instance:ParallelExecution.TestCase@4c583ecf]" started-at="2024-02-12T10:49:32 IST" name="test2" finished-at="2024-02-12T10:49:32 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ParallelExecution.TestCase@4c583ecf]" started-at="2024-02-12T10:49:32 IST" name="tearDown" finished-at="2024-02-12T10:49:35 IST" duration-ms="2536" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ParallelExecution.TestCase -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

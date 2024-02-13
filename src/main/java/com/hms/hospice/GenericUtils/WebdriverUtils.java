@@ -156,7 +156,7 @@ public class WebdriverUtils {
 	public void doubleClickOnWebElement(WebDriver driver, WebElement element)
 	{
 		Actions act=new Actions(driver);
-		act.doubleClick(element);
+		act.doubleClick(element).perform();
 	}
 	
 	
@@ -292,7 +292,7 @@ public class WebdriverUtils {
 	public void scrollAction(WebDriver driver)
 	{
 		JavascriptExecutor jse=(JavascriptExecutor)driver;
-		jse.executeScript("wndow.scrollBy(0,500)", "");
+		jse.executeScript("window.scrollBy(0,500)", "");
 		
 	}
 	
